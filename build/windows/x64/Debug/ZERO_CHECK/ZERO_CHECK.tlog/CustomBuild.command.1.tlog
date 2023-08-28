@@ -1,0 +1,10 @@
+^C:\USERS\USER\TEENCONNECT\TEENCONNECT\BUILD\WINDOWS\CMAKEFILES\DED27EFD604EB64EF775E06A5759209E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/user/TeenConnect/teenconnect/windows -BC:/Users/user/TeenConnect/teenconnect/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/user/TeenConnect/teenconnect/build/windows/teenconnect.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
