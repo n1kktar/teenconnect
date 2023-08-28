@@ -18,7 +18,7 @@ class RegisterAge extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('Привет $name'),
+              Text('Приветствую $name'),
               const SizedBox(height: 30),
               const Text('Сколько тебе лет?'),
               const SizedBox(height: 20),
